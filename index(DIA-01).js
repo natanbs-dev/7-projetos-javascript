@@ -61,7 +61,8 @@ console.log(zeppelin[3])
 /*
 Função
     - somente passando o status
-    - função de calculo
+    - função de calculo de porcentagem e como chamar ela
+    - os argumentos ao definir a função
 */
 function saletatus(status, total) {
     console.log('\naproved = ' + status + " \ntotal amount = " + total)
@@ -74,3 +75,10 @@ function percentage10(price) {
 }
 
 console.log(percentage10(20))
+
+function percentageTot(valor, porcentagem) {
+    let resul = (valor * porcentagem) / 100;
+    console.log(`${porcentagem}% de ${valor} é ${resul}`); 
+}
+// console.log(percentageTot(300, 50))
+percentageTot(200, 10);
